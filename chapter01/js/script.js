@@ -1,9 +1,9 @@
 //메뉴
-$("nav>ul>li").mouseover(function() {
-    $(".sub, .menuBg").stop().slideDown();
+$("nav>ul>li").mouseover(function () {
+    $(".sub, .menuBg").stop().slideDown(500);
 });
-$("nav>ul>li").mouseout(function() {
-    $(".sub, .menuBg").stop().slideUp();
+$("nav>ul>li").mouseout(function () {
+    $(".sub, .menuBg").stop().slideUp(500);
 });
 
 //슬라이드
@@ -14,15 +14,15 @@ function slide() {
     } else {
         i = 0;
     }
-    $(".slide ul").animate({marginLeft: -1200 * i}, 1000);
+    $(".slide ul").animate({ marginLeft: -1200 * i }, 1000);
 }
 setInterval(slide, 3000);
 
 //탭메뉴
-let t; 
-$(".tabmenu>li").click(function(e) {
+let t;
+$(".tabmenu>li").click(function (e) {
     e.preventDefault();
-    $("tabmenu>li").removeClass("on");
+    $(".tabmenu>li").removeClass("on");
     $(this).addClass("on");
 
     t = $(this).index();
@@ -30,13 +30,13 @@ $(".tabmenu>li").click(function(e) {
 
     $(".tabcon").hide();
     $(".tabcon").eq(t).show();
-}) 
+})
 
 //팝업
-$(".pop").click(function(e) {
+$(".pop").click(function (e) {
     e.preventDefault();
     $("#popup").show();
 });
-$(".close button").click(function() {
+$(".close button").click(function () {
     $("#popup").hide();
 })

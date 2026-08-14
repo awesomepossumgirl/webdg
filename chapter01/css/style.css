@@ -104,16 +104,19 @@ nav>ul>li:hover>a {
     height: 300px;
     overflow: hidden;
 }
+
 .slide ul {
     width: 3600px;
     height: 300px;
     display: flex;
 }
+
 .slide ul li {
     position: relative;
     width: 1200px;
     height: 300px;
 }
+
 .slide ul li h2 {
     background: #0080c9;
     position: absolute;
@@ -188,7 +191,7 @@ nav>ul>li:hover>a {
     left: 0;
     width: 100%;
     background: #81b445;
-    padding:5px;
+    padding: 5px;
     height: 140px;
 }
 
@@ -370,7 +373,7 @@ footer select {
 }
 
 .popcon {
-    position : relative;
+    position: relative;
     width: 500px;
     top: 50%;
     left: 50%;
@@ -387,7 +390,7 @@ footer select {
 }
 
 .popcon .text {
- margin: 20px 0; 
+    margin: 20px 0;
 }
 
 .popcon .close {
