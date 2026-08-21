@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+.wrap {
+    width: 1000px;
+    height: 670px;
+    display: flex;
+    position: relative;
+}
+
+header {
+    width: 200px;
+    background: #ccc;
+    padding: 80px 10px;
+    flex-shrink: 0;
+}
+
+nav {
+    margin-top: 50px;
+    position: relative;
+}
+
+nav>ul>li>a {
+    display: block;
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+nav>ul>li:hover>a {
+    background: #fff;
+    color: #333;
+}
+
+.sub {
+    position: absolute;
+    left: 180px;
+    top: -10px;
+    z-index: 10;
+    width: 150px;
+    height: 200px;
+    background: #fff;
+    display: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub li a:hover {
+    background: #757575;
+    color: #fff;
+}
+
+.contents {
+    width: 800px;
+}
+
+.slide {
+    height: 350px;
+    position: relative;
+}
+
+.slide ul li {
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide ul li h2 {
+    color: #fff;
+    background: #333;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+
+.slide ul li a {
+    display: block;
+    height: 100%;
+}
+
+.slide ul li.s1 {
+    background: url(../images/s1.jpg) no-repeat center/cover;
+}
+.slide ul li.s2 {
+    background: url(../images/s3.jpg) no-repeat center/cover;
+}
+.slide ul li.s3 {
+    background: url(../images/s3.jpg) no-repeat center/cover;
+}
+
+.con {
+    height: 200px;
+    display: flex;
+}
+
+.tab {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+}
+
+.tabmenu {
+    display: flex;
+}
+
+.tabmenu>li {
+    width: 150px;
+    background: #D3D3D3;
+}
+
+
+.tabmenu>li>h2>a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.tabmenu>li.on {
+    background: #333;
+    color: #fff;
+}
+
+.tabcon {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 5px;
+    height: 140px;
+}
+
+.notice ul {
+    padding: 0 15px;
+}
+
+.notice ul li {
+    border-bottom: 1px dashed #fff;
+}
+
+.notice ul li:last-child {
+    border-bottom: none;
+}
+
+.notice ul li a {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    color: #fff;
+}
+
+.notice ul li p {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.gall {
+    display: none;
+}
+
+.gall ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.gall ul li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.banner {
+    width: 300px;
+    background: #fff;
+    padding: 10px;
+}
+
+.banner h2 {
+    background: #333;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner a {
+    display: block;
+    height: 130px;
+    background: url(../images/banner.jpg) center/cover;
+    border-radius: 30px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.banner div {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.banner div h3 {
+    margin-bottom: 10px;
+    color: #f4d01f;
+}
+
+.go {
+    width: 200px;
+    padding: 10px;
+}
+
+.go h2 {
+    background: #333;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.go ul li {
+    margin-top: 5px;
+}
+
+.go ul li img {
+    width: 20px;
+}
+
+.go ul li a {
+    display: block;
+    font-size: 13px;
+    height: 40px;
+    border-radius: 5px;
+    background: #757575;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+footer {
+    position: relative;
+    height: 120px;
+    background: #666;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+footer div {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+footer .fsns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer .fsns li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 9px;
+}
+
+footer .fsns li:first-child a {
+    background: #3c5b9a;
+}
+
+footer .fsns li:nth-child(2) a {
+    background: #47b749;
+}
+
+footer .fsns li:nth-child(3) a {
+    background: red;
+}
+
+footer select {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+#popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.popcon {
+    position: relative;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.popcon h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.popcon .text {
+    margin: 20px 0;
+}
+
+.popcon .close {
+    text-align: right;
+}
+
+.popcon .close button {
+    background: #1a237a;
+    padding: 10px;
+    color: #fff;
+}
+
+.popcon .close button:hover {
+    background: #D3D3D3;
+    color: #333;
+}
